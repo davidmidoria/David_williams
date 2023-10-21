@@ -1,0 +1,11 @@
+.cabecalho{
+    background-color: black;
+    text-align: center;
+    box-shadow: 2px 0.5px 5px 2px purple;
+}
+
+.cabecalho__lista--item{
+    display: inline-block;
+    color:purple;
+
+}
