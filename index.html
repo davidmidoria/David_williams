@@ -4,33 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-
 </head>
 
 <body>
     <header class="cabecalho">
-        <img src="imagens/logo.png" alt="">
-        <nav>
-            <ul class="cabecalho__lista">
-                <li class="cabecalho__lista--item"><a href="#">quem eu sou</a></li>
-                <li class="cabecalho__lista--item"><a href="#">projetos</a></li>
-                <li class="cabecalho__lista--item"><a href="#">fale comigo</a></li>
+        
+        <section class="cabecalho_section">
+            <i class="logo">DW</i>
+            <button class="cabecalho_menu--botao" onclick="openMenu()"><i
+                    class="material-symbols-outlined ">menu</i></button>
+        </section>
+        <nav class="cabecalho_menu">
+            <ul>
+                <li class="cabecalho_menu--link" onclick="openMenu()">inicio</li>
+                <li class="cabecalho_menu--link" onclick="openMenu()">Sobre Mim</li>
+                <li class="cabecalho_menu--link" onclick="openMenu()">Projetos</li>
+                <li class="cabecalho_menu--link" onclick="openMenu()">Contato</li>
             </ul>
         </nav>
-        
     </header>
-    <main>
-
+    <main class="conteudo">
+        <h1 class="titulo">david</h1>
+        
     </main>
-    <footer>
+    <script>
+        function openMenu(){
+            var ValorDisplay =document.querySelector(".cabecalho_menu").style.display
+            if(ValorDisplay != 'none' & 650>window.innerWidth){
+                document.querySelector(".cabecalho_menu").style.display = 'none'
+            }else{document.querySelector(".cabecalho_menu").style.display = 'block'
 
-    </footer>
-    <script src="teste.js"></script>
+            }
+        }
+    </script>
 </body>
 
 </html>
